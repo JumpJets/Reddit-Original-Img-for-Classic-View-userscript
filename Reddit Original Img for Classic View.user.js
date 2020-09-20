@@ -28,7 +28,7 @@
 
 	document.body.addEventListener("click", (e) => { const ret = replace(e.target); if (ret) e.preventDefault(); }, false);
 
-	styles.textContent = "a.original_img { display: block; } a.original_img img { display: block !important; transform-origin: left center; position: relative; z-index: 3; transition: .1s linear; max-width: 100%; max-height: 100%; pointer-events: none; } a.original_img:hover img { max-width: 100vw; max-height: calc(100vh - 50px); position: fixed; top: 50px; bottom: 0; object-fit: scale-down; height: calc(100vh - 50px); } .Post, .Post > div:nth-of-type(2) > div:first-of-type > div:first-of-type > div:first-of-type > div { overflow: visible !important; }";
+	styles.textContent = "a.original_img { display: block; } a.original_img img { display: block !important; transform-origin: left center; position: relative; z-index: 3; transition: .1s linear; max-width: 100%; max-height: 100%; pointer-events: none; } a.original_img:hover img { max-width: 100vw; max-height: calc(100vh - 50px); position: fixed; top: 50px; bottom: 0; object-fit: scale-down; height: calc(100vh - 50px); } .Post, .Post > div:nth-of-type(2) > div:first-of-type > div:first-of-type > div:first-of-type > div { overflow: visible !important; } div[data-test-id=\"post-content\"] a.original_img { min-height: calc(36.459vw / 16 * 9);	min-width: 100%; } div[data-test-id=\"post-content\"] a.original_img:hover img { max-height: unset !important; transform-origin: center center !important; right: 0; left: 0; z-index: 5; }";
 
 	document.body.appendChild(styles);
 })();
